@@ -17,3 +17,27 @@ button:hover {
   background-color: rgb(53, 57, 65);
   cursor: pointer;
 }
+
+input {
+  margin-left: -24px;
+  width: calc(100% + 48px);
+  height: 48px;
+  background-color: rgb(53, 57, 65);
+}
+
+input:hover {
+  background-color: rgb(79, 84, 94);
+  cursor: pointer;
+}
+
+textarea {
+  margin-left: -24px;
+  width: calc(100% + 48px);
+  height: 48px;
+  background-color: rgb(53, 57, 65);
+}
+
+textarea:hover {
+  background-color: rgb(79, 84, 94);
+  cursor: pointer;
+}

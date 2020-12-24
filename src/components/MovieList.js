@@ -4,7 +4,7 @@ import { selectMovie } from "../actions/index";
 
 const MovieList = (props) => {
   const listItems = props.movies.map((movie) => {
-    console.log("movie list Props", props);
+    // console.log("movie list Props", props);
     return (
       <div key={movie.title}>
         <button
@@ -53,7 +53,6 @@ const MovieList = (props) => {
 
   return (
     <div>
-      <h2>Movie List</h2>
       <ul>{listItems}</ul>
     </div>
   );

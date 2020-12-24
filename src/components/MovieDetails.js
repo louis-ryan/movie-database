@@ -3,12 +3,31 @@ import { connect } from "react-redux";
 import { deSelectMovie } from "../actions/index";
 import MovieTrailer from "./MovieTrailer";
 import MovieList from "./MovieList";
+import NewMovie from "./NewMovie";
 
 const MovieDetails = (props) => {
   console.log("movie details props", props);
   if (!props.selectedMovie) {
     return (
       <div>
+        <NewMovie />
+        {/* <button
+          style={{
+            height: "48px",
+            paddingLeft: "16px",
+            paddingRight: "16px",
+          }}
+          onClick={() => props.addNewMovie()}
+        >
+          <p
+            style={{
+              fontWeight: "800",
+            }}
+          >
+            + Add New Movie
+          </p>
+        </button> */}
+        <h2>Movie List</h2>
         <MovieList />
       </div>
     );

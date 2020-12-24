@@ -59,6 +59,15 @@ const moviesReducer = () => {
   ];
 };
 
+// const addMovieReducer = (state, action) => {
+//   switch (action.type) {
+//     case "MOVIE_SELECTED":
+//       return action.payload;
+//     default:
+//       return state;
+//   }
+// };
+
 const selectedMovieReducer = (state = null, action) => {
   switch (action.type) {
     case "MOVIE_SELECTED":
@@ -73,4 +82,5 @@ const selectedMovieReducer = (state = null, action) => {
 export default combineReducers({
   movies: moviesReducer,
   selectedMovie: selectedMovieReducer,
+  // newMovie: addMovieReducer,
 });
